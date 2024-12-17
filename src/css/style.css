@@ -126,9 +126,12 @@ header .logo {
 }
 
 .showcase img {
-    height: 650px;
+    height: 550px;
     border-radius: 30px;
     flex: 1 0 0;
+    object-fit: cover; /* Ajusta a imagem para ocupar bem o espaço */
+    display: block; /* Evita espaços indesejados */
+
 }
 
 .text {
