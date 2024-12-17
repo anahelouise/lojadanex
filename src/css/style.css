@@ -111,28 +111,25 @@ header .logo {
     color: #009463;
 }
 
-
 .showcase {
-    background-color: #00A877; 
-    min-height: 100vh; 
-    width: 100%;
+    background: #00A877;
+    min-height: 100vh;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 9%; 
+    margin: 10px 6%;
     gap: 50px;
+    padding: 10px 9%; 
+    width: 100%;
     margin: 0;
 }
 
 .showcase img {
-    height: 550px;
-    border-radius: 30px;
+    height: 600px;
     flex: 1 0 0;
-    object-fit: cover; /* Ajusta a imagem para ocupar bem o espaço */
-    display: block; /* Evita espaços indesejados */
-
 }
+
 
 .text {
     position: relative;
