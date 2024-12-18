@@ -31,12 +31,12 @@ header .logo {
 }
 
 .logo-link {
-    text-decoration: none; /* Remove sublinhado */
-    color: inherit; /* Mantém a cor do texto original */
+    text-decoration: none; 
+    color: inherit;
 }
 
 .logo-link:hover .logo {
-    color: #00A877; /* Altere a cor ao passar o mouse */
+    color: #00A877; 
 }
 
 .toggle a {
