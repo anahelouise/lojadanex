@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 6%;
+    z-index: 1000;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header .logo {
+    color: black;
+    cursor: pointer;
+}
+
+.logo-link {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.logo-link:hover .logo {
+    color: #000000; 
+}
+
+.toggle a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.dropdown > a:hover {
+    color: #009463; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    padding: 10px 0;
+    transform: translateY(10px); 
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #009463;
+    color: #ffffff;
+    padding-left: 25px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown > a::after {
+    content: '▼';
+    font-size: 12px;
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover > a::after {
+    transform: rotate(180deg);
+    color: #009463;
+}
+
+.showcase {
+    background: #00A877;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 6%;
+    gap: 50px;
+    padding: 10px 9%; 
+    width: 100%;
+    margin: 0;
+}
+
+.showcase img {
+    height: 600px;
+    flex: 1 0 0;
+}
+
+
+.text {
+    position: relative;
+    z-index: 10;
+    margin-top: 0px; 
+}
+
+.text h1 {
+    color: #ffffff;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text p {
+    color: #ffffff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    margin-bottom: 20px;
+}
+
+.showcase-produtos {
+    background-color: #000000;
+    min-height: 100vh; 
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start;
+    padding: 10px 9%; 
+    gap: 50px;
+    margin: 0; 
+}
+
+
+.header-produtos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.header-produtos h1 {
+    font-size: 32px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.header-produtos p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.card-produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.produto-imagem {
+    aspect-ratio: 1;
+    background-color: #e5e5e5;
+    border-radius: 30px;
+    width: 100%;    
+}
+
+.nome-produto,
+.preco-produto,
+.tamanho-produto{
+    font-size: 14px;
+}
+
+.nome-produto{
+    color: #fff;
+}
+
+.preco-produto {
+    color: #fff;
+}
+
+.tamanho-produto{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+}
+
+.add-produtos-to-carrinho {
+    display: block; 
+    width: 100%;
+    text-align: center; 
+    padding: 8px;
+    background: transparent;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none; 
+    transition: background-color 0.2s, color 0.2s; 
+    margin-bottom: 35px;
+}
+
+.add-produtos-to-carrinho:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+    color: #00ffff;
+}
+
+.showcase-novacolecao {
+    background-color: #1E262A; 
+    min-height: 15vh;
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    padding: 10px 9%; 
+    margin: 0;
+}
+
+.text-novacolecao h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%; 
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+.text-novacolecao p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%; 
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.showcase-produtosExclusivos {
+    background-color: #009463; 
+    min-height: 85vh; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    padding: 10px 9%; 
+    gap: 10px;
+    margin: 0; 
+}
+
+
+.header-produtosExclusivos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.header-produtosExclusivos h1 {
+    font-size: 32px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.header-produtosExclusivos p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-container {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.produtosExclusivos {
+    min-width: 280px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.produtoExclusivos-imagem{
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-imagem::before {
+    font-size: 2rem;
+    color: #999;
+}
+
+
+.nome-produto {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.tamanho-produto {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.preco-produto {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.add-to-carrinho {
+    display: block;
+    width: 100%;
+    text-align: center; 
+    padding: 8px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none; 
+    transition: background-color 0.2s, color 0.2s; 
+    margin-bottom: 35px;
+}
+
+.add-to-carrinho:hover {
+    background-color: #ffffff;
+    color: #000000; 
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+    padding: 10px;
+}
+
+.nav-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+}
+
+.nav-button:hover {
+    background-color: white;
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+
+.footer {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 10px 6%;
+}
+.footer-info a {
+    color: #665;
+    text-decoration: none;
+}
+.footer-info {
+    text-align: center;
+    font-size: 14px;
+    color: #665;
+    margin-bottom: 15px;
+}

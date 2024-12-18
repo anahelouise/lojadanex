@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="../css/produto-view.css">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html" class="logo-link">
+            <h2 class="logo">NEXATLAS</h2>
+        </a>
+        <div class="dropdown">
+            <a href="#">Categorias</a>
+            <div class="dropdown-content">
+                <a href="../../index.html">Início</a>
+                <a href="produtos-camisetas.html">Camisetas</a>
+                <a href="produtos-bones.html">Bonés</a>
+                <a href="produtos-camisetas.html">Garrafas</a>
+                <a href="exclusivos.html">Exclusivos</a>
+            </div>
+        </div>        
+    </header>
+    <section class="showcase">
+        <div class="container">
+            <div class="conteudo-produto">
+
+                <h1 class="nome-produto">Nome do Produto</h1>
+                <div class="preco-produto">
+                    $55 <span class="preco-detalhes">(4.5 estrelas) • 10 avaliações</span>
+                </div>
+
+                <div class="tabs">
+                    <a href="#" class="tab active">Detalhes do Produto</a>
+                </div>
+
+                <p class="descricao-produto">
+                    Este produto é feito com materiais de alta qualidade, garantindo durabilidade e conforto. Seu design
+                    moderno se destaca pela elegância e funcionalidade.
+                </p>
+
+                <div class="produto-imagems">
+                    <div class="imagem-principal">
+                        <img src="../img/Placeholder3.png" alt="">
+                    </div>
+                    <div class="thumbnail-container">
+                        <div class="thumbnail">
+                            <img src="../img/Placeholder4.png" alt="">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="../img/Placeholder4.png" alt="">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="../img/Placeholder4.png" alt="">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="../img/Placeholder4.png" alt="">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="../img/Placeholder4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <!--<div class="option-buttons">
+                    <button class="option-btn active">Opção um</button>
+                    <button class="option-btn">Opção dois</button>
+                </div>-->
+
+                <select class="select-opcaovariavel">
+                    <option value="">Selecionar Cor</option>
+                    <option value="">Preto</option>
+                    <option value="">Vermelho</option>
+                    <option value="">Azul</option>
+                </select>
+
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <label>Quantidade:</label>
+                    <input type="number" class="quantidade" value="1" min="1">
+                </div>
+
+                <button class="btn btn-primario">Comprar agora</button>
+                <button class="btn btn-secundario">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
