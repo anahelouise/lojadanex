@@ -196,18 +196,22 @@ header .logo {
 }
 
 .add-produtos-to-carrinho {
+    display: block; 
     width: 100%;
+    text-align: center; 
     padding: 8px;
     background: transparent;
-    border: 2px solid rgb(0, 255, 255, 0.3);
+    border: 2px solid rgba(0, 255, 255, 0.3);
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
-    transition: background-color 0.2s;
+    text-decoration: none; 
+    transition: background-color 0.2s, color 0.2s; 
     margin-bottom: 35px;
 }
 
 .add-produtos-to-carrinho:hover {
-    background-color: #009463;
+    background-color: rgba(0, 255, 255, 0.1);
+    color: #00ffff;
 }
